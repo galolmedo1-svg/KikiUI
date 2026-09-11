@@ -1,8 +1,3 @@
---[=[
-    KikiUI - Maker
-    Fábrica de elementos y componentes gráficos con soporte dinámico.
-]=]
-
 local TweenService = game:GetService("TweenService")
 local Maker = {}
 Maker.__index = Maker
@@ -22,7 +17,6 @@ local function applyOverrides(element, options, windowConfig)
 	end
 end
 
--- Funcionalidad de Elemento Dinámico (Base Object)
 local function wrapDynamicElement(guiObject, selfRef)
 	local obj = {}
 	obj.Instance = guiObject
